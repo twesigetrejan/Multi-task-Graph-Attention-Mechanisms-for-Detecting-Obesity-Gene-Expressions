@@ -1,0 +1,10 @@
+service: "service:svc" # Refers to the `svc` object in your `service.py`
+include:
+  - "*.py" # Include all Python files in the current directory
+  - "*.pkl" # Include all `.pkl` files (encoders and meal data)
+python:
+  packages: # List your Python dependencies here
+    - pandas
+    - scikit-learn
+    - pydantic
+    - bentoml
